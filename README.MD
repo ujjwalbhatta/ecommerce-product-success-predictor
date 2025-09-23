@@ -1,0 +1,39 @@
+# Amazon Rating Prediction Project
+
+Build a machine learning system that predicts product ratings to help product managers make stocking decisions.
+
+**Example Use Case:**
+- **Input:** price=$25, category="Electronics/Accessories", brand="GenericBrand", description="Durable silicone case with kickstand"
+- **Output:** "⚠️ 2.8/5 star rating expected - HIGH RISK product"
+
+## 📊 Dataset
+Using **Amazon Reviews 2023** dataset from McAuley Lab:
+- **Source:** https://amazon-reviews-2023.github.io/
+- **Category:** Electronics (43.9M reviews, 18.3M users, 1.6M items)
+- **Sample Size:** 30,000 merged records for this project
+
+## 📁 Data Files Required
+Download these files from the website:
+1. `Electronics.jsonl` - Review data (ratings, text, user info)
+2. `meta_Electronics.jsonl` - Product metadata (title, price, features, etc.)
+
+Run file data_extraction.ipynb file to save the new data in csv format with everything you need.
+
+
+## 📋 Output Dataset Features
+
+### From Product Metadata:
+- `main_category` - Product category
+- `product_title` - Product name
+- `average_rating` - Overall product rating
+- `rating_number` - Number of ratings
+- `price` - Product price in USD
+- `description` - Product description (list format)
+- `parent_asin` - Unique product ID
+- `details` - Product details (contains brand, size, etc.)
+
+### From Reviews:
+- `rating` - Individual review rating (**Target variable**)
+- `review_title` - Review title
+- `text` - Review content
+- `helpful_vote` - Review helpfulness votes
