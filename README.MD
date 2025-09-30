@@ -37,3 +37,13 @@ Run file data_extraction.ipynb file to save the new data in csv format with ever
 - `review_title` - Review title
 - `text` - Review content
 - `helpful_vote` - Review helpfulness votes
+
+🛠️ Project Pipeline
+1. data_cleaning.ipynb
+Handle missing values and outliers (e.g., drop products with missing price, filter unrealistic values).
+Normalize text fields (lowercasing, removing special characters, etc.).
+Save cleaned and merged dataset into a CSV file for downstream use.
+Output: [cleaned_data.csv](data/processed/amazon_electronics_clean.csv)
+
+2. feature_engineering.ipynb
+This notebook transforms the cleaned dataset into machine learning–ready features.
