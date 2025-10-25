@@ -1,6 +1,5 @@
 # Amazon Rating Prediction Project
-
-Build a machine learning system that predicts product ratings to help product managers make stocking decisions.
+A product manager wants to evaluate a NEW product in an EXISTING category/brand. Using historical performance data of similar products (same brand tier, category), predict how this new product will perform.
 
 **Example Use Case:**
 - **Input:** price=$25, category="Electronics/Accessories", brand="GenericBrand", description="Durable silicone case with kickstand"
@@ -48,4 +47,3 @@ Output: [cleaned_data.csv](data/processed/amazon_electronics_clean.csv)
 2. feature_engineering.ipynb
 This notebook transforms the cleaned dataset into machine learning–ready features.
 
-A product manager wants to evaluate a NEW product in an EXISTING category/brand. Using historical performance data of similar products (same brand tier, category), predict how this new product will perform.
